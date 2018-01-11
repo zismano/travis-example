@@ -4,7 +4,7 @@ const axios = require('axios');
 
 require('dotenv').config();
 
-const baseUrl = `http://localhost:${process.env.PORT}` || `http://localhost:3000`;
+const baseUrl = `http://localhost:${process.env.PORT}`;
 //const baseUrl = 'http://127.0.0.1:3000';
 
 describe('GET /', () => {
