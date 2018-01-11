@@ -1,9 +1,11 @@
 const expect = require('chai').expect;
 const axios = require('axios');
 
+
 require('dotenv').config();
 
-const baseUrl = `http://localhost:${process.env.PORT}`;
+const baseUrl = `http://localhost:${process.env.PORT}` || `http://localhost:3000`;
+//const baseUrl = 'http://127.0.0.1:3000';
 
 describe('GET /', () => {
   it('responds with a status code of 200', (done) => {
@@ -17,3 +19,4 @@ describe('GET /', () => {
       })
   })
 });
+
